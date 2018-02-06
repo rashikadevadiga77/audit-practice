@@ -3,6 +3,10 @@ Projects to learn audit using database triggers, hibernate envers and spring dat
 
 1. audit-hibernate
 Used hibernate-envers library to audit CRUD operations on BAR table
+BAR - Table to be audited
+  Columns:
+    1. BAR_ID
+    2. BAR_NAME
 BAR_AUD - Audit details of BAR table
   Columns:
     1. REV      : REV

@@ -3,25 +3,23 @@ Projects to learn audit using database triggers, hibernate envers and spring dat
 
 1. audit-hibernate
 Used hibernate-envers library to audit CRUD operations on BAR table
-BAR - Table to be audited
-  Columns:
-    1. BAR_ID
-    2. BAR_NAME
-BAR_AUD - Audit details of BAR table
-  Columns:
-    1. REV      : REV
-    2. REVTYPE  : 0 - Insert, 1- Update 
-    3. BAR_ID   : ID of BAR(Column of BAR table with updated value)
-    4. BAR_NAME : NAME of BAR(Column of BAR table with updated value)
-REVINFO - A row is inserted into this table on each new revision, that is, on each commit of transactions that change audited data. 
-  Columns:
-    1. REV      : Auto generated primary key
-    2. REVTSTMP : Value of this property will be automatically set by envers.
-    
+  1. BAR - Table to be audited
+    Columns:
+      i. BAR_ID
+      ii. BAR_NAME
+  2. BAR_AUD - Audit details of BAR table
+    Columns:
+      i. REV      : REV
+      ii. REVTYPE  : 0 - Insert, 1- Update 
+      ii. BAR_ID   : ID of BAR(Column of BAR table with updated value)
+      iv. BAR_NAME : NAME of BAR(Column of BAR table with updated value)
+  3. REVINFO - A row is inserted into this table on each new revision, that is, on each commit of transactions that change audited data. 
+    Columns:
+      i. REV      : Auto generated primary key
+      ii. REVTSTMP : Value of this property will be automatically set by envers.
 TODO:
   1. Change spring.jpa.hibernate.ddl-auto from create to none 
       Done: Used liquibase to create table and database versioning
-
 
 2. audit-jpa
 Used @CreatedDate, @LastModifiedDate, @CreatedBy, @LastModifiedBy and @EntityListeners

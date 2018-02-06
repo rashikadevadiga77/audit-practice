@@ -17,3 +17,20 @@ REVINFO - A row is inserted into this table on each new revision, that is, on ea
   Columns:
     1. REV      : Auto generated primary key
     2. REVTSTMP : Value of this property will be automatically set by envers.
+    
+TODO:
+  1. Change spring.jpa.hibernate.ddl-auto from create to none 
+      Done: Used liquibase to create table and database versioning
+
+
+2. audit-jpa
+Used @CreatedDate, @LastModifiedDate, @CreatedBy, @LastModifiedBy and @EntityListeners
+Implement Audtitor<> to provide the author name for createdBy and modifiedBy
+
+TODO: 
+  1. Add audit tables
+
+3. audit4j-practice
+
+
+Reference: http://www.baeldung.com/database-auditing-jpa

@@ -31,6 +31,9 @@ TODO:
   1. Add audit tables
 
 3. audit4j-practice
-
+Used audit4J library
+TODO: 
+  1. Update build.gradle to get the audit4j dependencies
+      Done
 
 Reference: http://www.baeldung.com/database-auditing-jpa

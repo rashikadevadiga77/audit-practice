@@ -1,5 +1,8 @@
 # audit-practice
-Projects to learn audit using database triggers, hibernate envers and spring data jpa
+Audit tables capture dml changes made to the tables. These projects illustrates 3 of the many ways we can create audit tables:
+1. Using database triggers
+2. Hibernate envers
+3. Spring data jpa.
 
 1. audit-hibernate
 Used hibernate-envers library to audit CRUD operations on BAR table
